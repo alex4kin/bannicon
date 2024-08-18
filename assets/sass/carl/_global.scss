@@ -1,0 +1,10 @@
+@import "../mixins";
+@import "theme-carl";
+// Carl theme customization
+
+.form-control:focus {
+  border-color: $bg-submit;
+}
+
+
+

@@ -1,0 +1,113 @@
+@import "mixins";
+.sidebar {
+
+  .logobar {
+    display: block;
+    margin: 0;
+    padding: 20px 15px;
+    
+    a {
+      display: block;
+      line-height: 53px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  p {
+    padding: 0 15px;
+
+    &.butt-end {
+      padding: 0;
+    }
+  }
+
+  .btn.btn-regular {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .butt-end .btn.btn-regular {
+    border: none;
+    background-color: transparent;
+    @include font-size(17);
+    height: 46px;
+  }
+
+  .sb-menu {
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+
+    > li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 255px;
+        height: 47px;
+        color: white;
+        text-decoration: none;
+        margin: 0;
+        padding: 0 17px;
+      }
+    }
+  }
+
+  .sb-submenu {
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        height: 42px;
+        padding: 0 17px 0 55px;
+      }
+    }
+  }
+
+  .link-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    &.-left {
+      padding: 0 0 0 25px;
+
+      i.zmdi {
+        position: absolute;
+        left: 0;
+        top: .25em;
+        opacity: .5;
+      }
+    }
+  }
+
+  .sb-footer {
+
+    dfn {
+      display: block;
+      @include font-size(14);
+      line-height: 1.14;
+    }
+  }
+}
