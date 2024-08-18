@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest"> -->
+
+  <title>CATALOG Small</title>
+
+  <link href="assets/fonts/font-manrope.css" rel="stylesheet">
+  <link href="assets/fonts/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="assets/css/theme.css" rel="stylesheet">
+
+</head>
+
+<body class="catalog-small">
+
+  <div class="body-wrapper">
+
+    <!-- app-Header -->
+    <header class="app-header header">
+      <section class="header-top">
+        <div class="container-fluid header-content">
+          <div class="info">
+            <p>Ежедневно: с 9-00 до 21-00</p>
+          </div>
+          <div class="order">
+            <div class="order__item calculator">
+              <a href="#">Заказать расчет кухни <img src="assets/img/calculator.svg" alt="alt text"></a>
+            </div>
+            <div class="order__item design">
+              <a href="#">Заказать дизайн-проект <img src="assets/img/design-project.svg" alt="alt text"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header-main">
+        <div class="container-fluid header-content">
+          <div class="d-flex">
+
+            <!-- LOGO -->
+            <div class="logo-bar">
+              <a class="logo-horizontal logobox" href="index.html"></a>
+            </div>
+
+            <!-- Search bar -->
+            <button id="search-button" class="search-bar border-0 bg-transparent fs-sm d-none d-lg-block" type="button"
+              data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="bi bi-search"></i>
+            </button>
+
+            <!-- NAVIGATION -->
+            <nav class="nav _collapse" id="navbar">
+              <a class="nav-link active" aria-current="page" href="#">Каталог</a>
+              <a class="nav-link" href="#">Акции</a>
+              <a class="nav-link" href="#">Салоны</a>
+              <a class="nav-link" href="#">О&nbsp;компании</a>
+              <a class="nav-link" href="#">Блог</a>
+            </nav>
+
+            <!-- <button class="navbar-toggler navresponsive-toggler d-xxl-none collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="navbar-toggler-icon bi bi-list"></i>
+            </button> -->
+
+            <!-- Phone number -->
+            <div class="telefon">
+              <a href="tel:79991111111">+7 (999) 111-11-11</a>
+            </div>
+
+            <!-- Call button -->
+            <div class="call-button">
+              <!-- <button class="btn btn-primary d-flex align-items-center text-nowrap" id="btn-callme">
+                Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+              </button> -->
+              <a href="#" class="btn btn-primary d-flex align-items-center text-nowrap">
+                Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- // app-Header -->
+
+    <!-- app-content -->
+    <main class="main-content">
+      <section class="app-section inner-section">
+        <div class="container-fluid">
+
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Кухни</a>
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="#" aria-current="page">Все</a>
+              </li>
+            </ol>
+          </nav>
+
+          <h1 class="page-title">Кухни на заказ</h1>
+          <p class="max900">
+            Компания «Кухни от&nbsp;природы» более 9&nbsp;лет предоставляет полный комплекс услуг по&nbsp;продаже,
+            производству,
+            доставке и&nbsp;сборке кухонь на&nbsp;заказ по&nbsp;индивидуальным размерам в&nbsp;Москве
+            и&nbsp;на&nbsp;всей территории московской
+            области&nbsp;— вся&nbsp;заказанная кухонная мебель изготавливается в&nbsp;соответствии с&nbsp;пожеланиями
+            и&nbsp;требованиями
+            заказчика.
+          </p>
+
+        </div>
+      </section>
+
+      <section class="app-section filter-section">
+        <div class="app-content">
+          <div class="container-fluid">
+
+            <div class="filters">
+              <div class="filters__item">
+                <button class="btn btn-default">
+                  <img src="assets/img/settings.svg" alt="Open filters">
+                  <span>показать фильтры</span>
+                </button>
+              </div>
+              <div class="filters__item">
+                <ul class="navbar-nav me-auto mb-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">Тип</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">Стиль</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">Материал</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">Цвет</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section section-cards">
+        <div class="app-content">
+          <div class="container-fluid">
+
+            <div class="c-page">
+              <div class="card-box mb-3">
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                    <figcaption>
+                      <span>Любой цвет</span>
+                      <span>Любые размеры и форма</span>
+                      <span>5 вариантов декора</span>
+                    </figcaption>
+                    <span class="badge">хит продаж</span>
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/kuhnya-iz-keramogranita-1-640x480.jpg" alt="Description">
+                    <span class="badge ii">хит продаж</span>
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Савойя</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-rain-iz-mdf-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Тренто</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/kuhnya-iz-keramogranita-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-rain-iz-mdf-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/kuhnya-zov-iz-massiva-yasenya-glion-1-640x480 1.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-box grid-scop-flex mb-3">
+                <div class="left">
+                  <div class="card__item">
+                    <figure>
+                      <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                    </figure>
+                    <div class="el description">
+                      <div class="">
+                        <span>Современная кухня</span>
+                        <h4>Фуксия</h4>
+                      </div>
+                      <div class="">
+                        <a href="#" class="flex-link-icon">
+                          Калькулятор
+                          <img src="assets/img/card-calculator.svg" alt="Calculator">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="el price">
+                      <div class="">
+                        Цена от <var>29 999</var> руб./ метр
+                      </div>
+                      <div class="call-button">
+                        <a href="#" class="btn btn-default text-nowrap">
+                          Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <figure>
+                      <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                    </figure>
+                    <div class="el description">
+                      <div class="">
+                        <span>Современная кухня</span>
+                        <h4>Фуксия</h4>
+                      </div>
+                      <div class="">
+                        <a href="#" class="flex-link-icon">
+                          Калькулятор
+                          <img src="assets/img/card-calculator.svg" alt="Calculator">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="el price">
+                      <div class="">
+                        Цена от <var>29 999</var> руб./ метр
+                      </div>
+                      <div class="call-button">
+                        <a href="#" class="btn btn-default text-nowrap">
+                          Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <figure>
+                      <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                    </figure>
+                    <div class="el description">
+                      <div class="">
+                        <span>Современная кухня</span>
+                        <h4>Фуксия</h4>
+                      </div>
+                      <div class="">
+                        <a href="#" class="flex-link-icon">
+                          Калькулятор
+                          <img src="assets/img/card-calculator.svg" alt="Calculator">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="el price">
+                      <div class="">
+                        Цена от <var>29 999</var> руб./ метр
+                      </div>
+                      <div class="call-button">
+                        <a href="#" class="btn btn-default text-nowrap">
+                          Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <figure>
+                      <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                    </figure>
+                    <div class="el description">
+                      <div class="">
+                        <span>Современная кухня</span>
+                        <h4>Фуксия</h4>
+                      </div>
+                      <div class="">
+                        <a href="#" class="flex-link-icon">
+                          Калькулятор
+                          <img src="assets/img/card-calculator.svg" alt="Calculator">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="el price">
+                      <div class="">
+                        Цена от <var>29 999</var> руб./ метр
+                      </div>
+                      <div class="call-button">
+                        <a href="#" class="btn btn-default text-nowrap">
+                          Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="card__item grid__item box-cta">
+                    <div class="v-banner">
+                      <h3>
+                        <span>Рассчитать вашу&nbsp;кухню</span>
+                        <img src="assets/img/design-i.svg" alt="Description">
+                      </h3>
+                      <h6>Расчёт производится индивидуально
+                        с&nbsp;учетом всех Ваших
+                        пожеланий</h6>
+                      <p>Запишитесь в&nbsp;салон и&nbsp;мы&nbsp;вернем 3&nbsp;000&nbsp;рублей с&nbsp;вашего заказа</p>
+
+                      <form class="form-order" action="#">
+                        <var class="form-item">
+                          <label class="form-label" for="inputUsername">Представьтесь</label>
+                          <input class="form-control" type="text" id="inputUsername" placeholder="Ваше имя" />
+                        </var>
+                        <var class="form-item">
+                          <label class="form-label" for="inputPhone">Телефон</label>
+                          <input class="form-control" type="tel" id="inputPhone" placeholder="+7 (000) 000 - 00 - 00" />
+                        </var>
+                        <var class="form-item">
+                          <label class="form-label" for="inputPhone">Комментарий</label>
+                          <textarea class="form-control" type="text" id="textArea"></textarea>
+                        </var>
+                        <span class="download">
+                          <input type="file" class="form-control" placeholder="Файл не выбран">
+                          <span class="sendfile">Вложить файл (не более 5 Мб) <img src="assets/img/paperclip.svg"
+                              alt="Paper clip"></span>
+                        </span>
+
+                        <div class="call-button">
+                          <button class="btn btn-default ondark text-nowrap" id="order">
+                            Заказать расчет кухни <i class="bi bi-arrow-right-short"></i>
+                          </button>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-box _grid-scop-flex mb-3">
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <figure>
+                    <img src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.jpg" alt="Description">
+                  </figure>
+                  <div class="el description">
+                    <div class="">
+                      <span>Современная кухня</span>
+                      <h4>Фуксия</h4>
+                    </div>
+                    <div class="">
+                      <a href="#" class="flex-link-icon">
+                        Калькулятор
+                        <img src="assets/img/card-calculator.svg" alt="Calculator">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el price">
+                    <div class="">
+                      Цена от <var>29 999</var> руб./ метр
+                    </div>
+                    <div class="call-button">
+                      <a href="#" class="btn btn-default text-nowrap">
+                        Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link disabled" href="#" aria-label="Previous">
+                    <i class="bi bi-chevron-compact-left"></i>
+                    <!-- <span aria-hidden="true">&laquo;</span> -->
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><span class="page-link" href="#"><i class="bi bi-three-dots"></i></span></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    <!-- <span aria-hidden="true">&raquo;</span> -->
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="divider">
+        <div class="container-fluid">
+          <div class="divider__item"></div>
+        </div>
+      </section>
+
+      <section class="app-section section-advantages">
+        <div class="app-content">
+          <div class="container-fluid">
+            <h3>
+              Кухни на заказ по индивидуальным размерам&nbsp;— <span><var>недорого</var>
+                и&nbsp;<var>под&nbsp;ключ</var></span>
+            </h3>
+            <div class="promo-box d-flex">
+              <div class="wrapper-txt d-flex">
+                <div class="txt-col d-flex">
+                  <div class="txt-col__item">
+                    <div class="txt-box">
+                      <h5>ВЫГОДНАЯ ЦЕНА</h5>
+                      <p>
+                        Стоимость кухни по индивидуальному заказу от нашей компании выходит на 15-20% дешевле, чем в
+                        среднем по рынку! И это не
+                        учитывая постоянные скидки и спецпредложения.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="txt-col__item">
+                    <div class="txt-box">
+                      <h5>БОЛЬШОЙ ВЫБОР</h5>
+                      <p>
+                        Стоимость кухни по индивидуальному заказу от нашей компании выходит на 15-20% дешевле, чем в
+                        среднем по рынку! И это не
+                        учитывая постоянные скидки и спецпредложения.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="txt-col d-flex">
+                  <div class="txt-col__item">
+                    <div class="txt-box">
+                      <h5>ВЫГОДНАЯ ЦЕНА</h5>
+                      <p>
+                        Стоимость кухни по индивидуальному заказу от нашей компании выходит на 15-20% дешевле, чем в
+                        среднем по рынку! И это не
+                        учитывая постоянные скидки и спецпредложения.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="txt-col__item">
+                    <div class="txt-box">
+                      <h5>БОЛЬШОЙ ВЫБОР</h5>
+                      <p>
+                        Стоимость кухни по индивидуальному заказу от нашей компании выходит на 15-20% дешевле, чем в
+                        среднем по рынку! И это не
+                        учитывая постоянные скидки и спецпредложения.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="txt-col d-flex">
+                  <div class="txt-col__item">
+                    <h5>БОЛЬШОЙ ВЫБОР</h5>
+                    <p>
+                      Стоимость кухни по индивидуальному заказу от нашей компании выходит на 15-20% дешевле, чем в
+                      среднем по рынку! И это не
+                      учитывая постоянные скидки и спецпредложения.
+                    </p>
+                  </div>
+                  <div class="txt-col__item txt-caption">
+                    <p>
+                      Изготовление кухни на заказ без скрытых платежей или наценок за «нестандарт»!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="img-col">
+                <img src="images/kuhnya-zov-iz-massiva-yasenya-glion-1-640x480 1.jpg" alt="Description">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="app-section section-banner">
+        <div class="app-content">
+          <div class="container-fluid">
+
+            <div class="banner-box">
+              <div class="banner__txt">
+                <p>При заказе кухни на&nbsp;сумму от&nbsp;350 тысяч мы&nbsp;предоставляем бесплатную доставку
+                  и&nbsp;сборку.</p>
+                <p>Мы ценим своих клиентов и&nbsp;готовы предложить вам&nbsp;отличные условия.</p>
+                <p>Подготовим кухню созданную специально под&nbsp;Вас!</p>
+              </div>
+              <div class="banner__btn">
+                <div class="call-button">
+                  <!-- <button class="btn btn-primary d-flex align-items-center text-nowrap" id="btn-callme">
+                                Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                              </button> -->
+                  <a href="#" class="btn btn-primary d-flex align-items-center text-nowrap">
+                    Перезвоните мне <i class="bi bi-arrow-right-short"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- // app-content -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="app-section foot-note">
+        <div class="container-fluid">
+          <p>
+            <strong>Мы работаем в Москве и по всей территории Московской области:</strong> Апрелевка, Балашиха,
+            Бронница,
+            Верея, Видное, Волоколамск,
+            Воскресенск, Высоковск, Голицыно, Дедовск, Джержинский, Дмитров, Долгопрудный, Домодедово, Дрезна, Дубна,
+            Железнодорожный, Жуковский, Зарайск, Звенигород, Зеленоград, Ивантеевка, Истра, Кашира, Климовск, Клин,
+            Коломна,
+            Королев, Котельники, Красноармейск, Красногорск, Краснозаводск, Краснознаменск, Кубинка, Куровское, Лобня,
+            Лосино-Петровский, Лукино-Дулево, Луховицы, Лыткарино, Люберцы, Можайск, Московский, Мытищи, Наро-Фоминск,
+            Ногинск,
+            Одинцово, Ожерелье, Озеры, Орехово-Зуево, Павловский Пасад, Пересвет, Подольск, Протвино, Пушкино, Пущино,
+            Раменское,
+            Реутов, Рошаль, Руза, Сергиев Посад, Серпухов, Солнечногорск, Старая купавна, Ступино, Сходня, Талдом,
+            Троицк,
+            Фрязино,
+            Химки, Хотьково, Черноголовка, Чехов, Шатура, Щелково, Щербинка, Электрогорск, Электросталь, Электроугли,
+            Юбилейный,
+            Яхрома
+          </p>
+        </div>
+      </section>
+      <section class="app-section foot-contact">
+        <div class="container-fluid">
+          <div class="d-flex">
+            <div class="logo-bar">
+              <a class="logobox" href="index.html"></a>
+            </div>
+            <div class="telebar">
+              <a href="tel:79991111111">
+                <span class="">+7 (999) 111-11-11</span>
+                <span class="">перезвоните мне</span>
+              </a>
+            </div>
+            <div class="opening-hours">
+              <span>Режим работы:</span>
+              <span>с <strong>11.00</strong> до <strong>20.00</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="app-section foot-menu">
+        <div class="container-fluid">
+          <div class="d-flex">
+            <div class="foot-menu__item">
+              <h4>Кухни</h4>
+              <div class="d-flex cols">
+                <ul>
+                  <li><a href="#">Современные</a></li>
+                  <li><a href="#">Классические</a></li>
+                  <li><a href="#">Неоклассика</a></li>
+                  <li><a href="#">Прованс</a></li>
+                  <li><a href="#">Кантри</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Хайтек</a></li>
+                  <li><a href="#">Модерн</a></li>
+                  <li><a href="#">Минимализм</a></li>
+                  <li><a href="#">В&nbsp;скандинавском стиле</a></li>
+                  <li><a href="#">Лофт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot-menu__item">
+              <h4>Материалы и Техника</h4>
+              <ul>
+                <li><a href="#">Фурнитура</a></li>
+                <li><a href="#">Фасады</a></li>
+                <li><a href="#">Каркасы</a></li>
+                <li><a href="#">Столешницы</a></li>
+                <li><a href="#">Бытовая техника</a></li>
+              </ul>
+            </div>
+            <div class="foot-menu__item">
+              <h4>Разделы</h4>
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Доставка и сборка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Адреса салонов</a></li>
+              </ul>
+            </div>
+            <div class="foot-menu__item">
+              <h4>Покупателям</h4>
+              <ul>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Гарантии</a></li>
+                <li><a href="#">Рассрочка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="app-section foot-contact">
+        <div class="container-fluid">
+          <div class="d-flex">
+            <div class="copyright">
+              <p>© 2000. Все права защищены</p>
+            </div>
+            <div class="socials">
+              <a class="icon-link" href="#" role="button">
+                <img src="assets/img/phone.svg" alt="call me">
+              </a>
+              <a class="icon-link" href="#" role="button">
+                <img src="assets/img/tg.svg" alt="telegram">
+              </a>
+              <a class="icon-link" href="#" role="button">
+                <img src="assets/img/yt.svg" alt="youtube">
+              </a>
+              <a class="icon-link" href="#" role="button">
+                <img src="assets/img/vc.svg" alt="вконтакте">
+              </a>
+            </div>
+            <div class="opening-hours">
+              <p><a href="#">Powered by Bannikon</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+  </div>
+  <!-- // body-wrapper -->
+
+  <div class="modal fade" tabindex="-1" id="searchModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header px-3 py-2">
+          <div class="input-group input-group-prefix">
+            <input type="text" id="search-input" name="search-input" class="form-control bg-transparent py-3"
+              placeholder="Search documents">
+            <label class="input-group-text">
+              <i class="bi bi-search"></i>
+            </label>
+          </div>
+        </div>
+        <!-- <div class="modal-body p-3 pt-0"></div> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="assets/js/jqscript.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+// Breadcrumb
+.breadcrumb {
+  .breadcrumb-item {
+    &.active a {
+      color: $txt-accent;
+      cursor: default;
+    }
+
+    a {
+      font-size: 1rem;
+      color: $txt-color;
+      text-decoration: none;
+      transition: color .25s ease-in-out;
+
+      &:hover {
+        color: $txt-accent;
+      }
+    }
+  }
+
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: "-";
+  }
+}

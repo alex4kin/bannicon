@@ -1,0 +1,50 @@
+// Link icons
+.pagination {
+  padding-top: 3rem;
+
+  .page-item .page-link {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    line-height: 1;
+    font-weight: 700;
+    color: $txt-color;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+
+    &:first-child,
+    &:last-child {
+      border-radius: 6px;
+    }
+  }
+
+  .page-link:hover,
+  .page-link:focus,
+  .page-link:active {
+    outline: none;
+    box-shadow: none;
+    border-radius: 6px;
+    background-color: transparent;
+  }
+
+  a.page-link:hover,
+  a.page-link:focus,
+  a.page-link:active {
+    background-color: $color-accent-hard;
+    color: $txt-color-reverse;
+  }
+
+  .page-item.active>.page-link {
+    background-color: $color-accent-hard;
+    color: $txt-color-reverse;
+  }
+
+  .disabled>.page-link,
+  .page-link.disabled {
+    background: transparent;
+    opacity: .6;
+  }
+}

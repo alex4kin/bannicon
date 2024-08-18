@@ -1,0 +1,57 @@
+// Custom margin / padding values via class name
+$marginRightValues: (
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28,
+  32,
+  64,
+  96
+);
+
+@each $indent in $marginRightValues {
+  .cmr-#{$indent} {
+    margin-right: #{$indent}px;
+  }
+}
+
+$paddingTopValues: (
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28,
+  32,
+  64,
+  96
+);
+
+@each $indent in $paddingTopValues {
+  .cpt-#{$indent} {
+    padding-top: #{$indent}px;
+  }
+}
+
+$paddingBottomValues: (
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28,
+  32,
+  64,
+  96
+);
+
+@each $indent in $paddingBottomValues {
+  .cpb-#{$indent} {
+    padding-bottom: #{$indent}px;
+  }
+}
